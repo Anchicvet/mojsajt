@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{
+            background-color:#f6f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        section{
+            width: 100%;
+            height: 95vh;
+            background-image: url(bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            background-color:#FFFFFF;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+            padding: 0px 5%;
+        }
+        nav ul{
+            display: flex;
+        }
+        nav ul li a{
+            margin: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #505050;
+            font-size:15px ;
+            font-weight: 700;
+        }
+        .contanier p:nth-child(1){
+            font-family: 'Krona One', sans-serif;
+            font-weight: bold;
+            color: #6d6d6d;
+            font-size: 22px;
+        }
+        .contanier p:nth-child(2){
+            font-family: calibri;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #1a1a1a;
+            font-size: 55px;
+
+        }
+        .contanier p:nth-child(3){
+            font-family: 'Krona One', sans-serif;
+            color: #403e3e;
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .contanier p{
+            line-height: 0px;
+            margin: 45px 0px 25px;
+        }
+        .contanier{
+            position:absolute ;
+            left: 13%;
+            top: 100px;
+            transform: translate(-13%,100px);
+        }
+        .contanier button{
+            width:130px ;
+            height: 42px;
+            border-radius: 10px;
+            font-family: 'Krona One', sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            outline: none;
+            margin: 0px 10px;
+            background-color: #0b0b0b;
+            color: #FFFFFF;
+            border: none;
+        }
+        button:active{
+            transform: scale(1.1);
+        }
+        .ana{
+            height: 700px;
+            position: absolute;
+            bottom: 0px;
+            left: 83%;
+            transform: translateX(-70%);
+        }
+        .omeni{
+            width: 80%;
+            height: 330px;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+            display: flex;
+            margin: -7% auto 20px auto;
+            position: relative;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        span{
+            font-style: italic;
+        }
+        .omeni img{
+            height: 350px;
+            filter: grayscale(10);
+        }
+        .text-omeni{
+            width: 550px;
+        }
+        .text-omeni p:nth-child(1){
+            color: #403e3e;
+            font-family: 'Krona One', sans-serif;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 0px;
+        }
+        .text-omeni p:nth-child(2){
+            color: #3e3d3d;
+            font-family:'Krona One', sans-serif;
+            font-weight:bold ;
+            font-size:16px ;
+            line-height: 5px;
+        }
+        .text-omeni p:nth-child(3){
+            color:black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;
+            text-align: justify;
+        }   
+        .projekti{
+            height: 600px;
+            background-color: #FFFFFF;
+            padding: 2% 10% 0px 10%;
+        }
+        .projektitext p:nth-child(1){
+            color: #403e3e;
+            font-family: 'Krona One', sans-serif;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 0px;
+        }
+
+        .projektitext p:nth-child(2){
+            color:black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;
+            text-align: left;
+            line-height: 1.5em;
+        }
+        .projektitext{
+            width: 500px;
+            margin: 50px 0px;
+        }
+        .box1,.box2,.box3{
+            width: 300px;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+            background-image: url(a.png);
+            
+        }
+        .box-galerija{
+            display: flex;
+            justify-content: space-between;
+        }
+      .see{
+            width:130px ;
+            height: 42px;
+            border-radius: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 14px;
+            outline: none;
+            margin: 160px 90px;
+            background-color: #0b0b0b;
+            color: #FFFFFF;
+            border: none;
+         }
+         .see:hover{
+             background-color: seashell;
+             color: black;
+         }
+         .kontakt{
+             width: 100%;
+             height:280px;
+             background-image:url(kontakt.png) ;
+             background-size: cover;
+             background-repeat: no-repeat;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         form input{
+             overflow: hidden;
+             background-color: blanchedalmond;
+             font-size: 20px;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             text-align: center;
+             margin-top: 20px;
+         }
+     .send{
+            width: 130px;
+            height: 42px;
+            border-radius: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 14px;
+            outline: none;
+            margin: 1opx 10px;
+            background-color: #0b0b0b;
+            color: #FFFFFF;
+            border: none;
+            margin-left: 80px;
+            margin-top: 20px;
+     }
+     label{
+            color: #757474;
+            font-family: 'Krona One', sans-serif;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 0px;
+         }
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#pocetna">Početna</a></li>
+                <li><a href="#omeni">O meni</a></li>
+                <li><a href="#projekti">Projekti</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+               
+            </ul>
+        </nav>
+        <div class="contanier" id="pocetna">
+            <p>Zdravo,</p>
+            <p>moje ime je Ana Cvetković</p>
+            <p>ja sam master biolog i php programer</p>
+           <button class="cv">Moj CV</button>
+        </div>
+        <img src="Bez_naslova-removebg-preview.png" class="ana">
+    </section>
+<div class="omeni" id="omeni">
+        <img src="ana.png" alt="ana">
+     <div class="text-omeni">
+        <p>O meni:</p>
+        <p>PHP programer</p>
+        <p>Zdravo,moje ime je Ana Cvetković, po zanimanju sam master biolog-zoolog. 
+            Master studije sam završila na univerzitetu u Beogradu 20117. godine, 
+            na temu etoloških odlika zmija ribarica na ostrvu Golem Grad u Makedoniji. 
+            Pored mnogobrojnih vrsta zmija Srbije, moja uža specijalnost su bile neotrovne zmije iz familje <span>Natrix.</span> 
+            Na pustom ostrvu Golem Grad u Prespanskom jezeru,vršila sam eksperimente o antipredatorskom ponašanju zmija <span> Natrix tesselata.</span>
+            Pored toga,bavila sam se i zaštitom životne sredine pre svega zaštitom vodenih ekosistema.
+            Imam objavljen naučni rad pod nazivom Checklist of freshwater leeches <span>(Hirudinea)</span> in Serbia.
+            Pored ljubavi prema prirodi od uvek sam imala i veliko interesovanje za računare i tehnologiju,
+            što je dovelo do moje prekalifikacije u IT sektor.
+            Uzivam u proučavanju internet tehnologija i učenju novih stvari svakoga dana.
+        </p>
+     </div>
+</div>
+    <div class="projekti" id="projekti">
+        <div class="projektitext">
+            <p>Moji projekti</p>
+            <p>Do sada sam uradila preko 10 različitih web sajtova,koristeći različite programske
+            jezike kao što su HTML,CSS,JAVA SCRIPT i PHP. Svaki projekat je rađen po želji klijenata
+            u unapred dogovorenom roku. 
+             </p>
+        </div>
+        <div class="box-galerija">
+            <div class="box1"><button class="see">Pogledajte više</button> </div>
+            <div class="box2"><button class="see">Pogledajte više</button> </div>
+            <div class="box3"><button class="see">Pogledajte više</button> </div>
+        </div>
+</div>
+<div class="kontakt" id="kontakt">
+    <form>
+        <label>Kontaktirajte me:</label><br>
+        <input type="text" placeholder="Vaše ime"><br>
+        <input type="text" placeholder="Vaše email"><br>
+        <input type="text" placeholder="Vaša poruka"><br>
+        <button class="send">Pošaljite</button>
+    </form>
+</div>
+</body>
+</html>
