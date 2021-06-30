@@ -1,5 +1,5 @@
 # mojsajt
 portfolio
-#Used technologies
+# Used technologies
 HTML
 CSS
